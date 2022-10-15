@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>/Users/decagon/IdeaProjects/week-three-sq012-musty-codified</OriginalElement>
+  <nodes>
+    <node x="410.5515703236513" y="512.6985284098706">Model.Manager</node>
+    <node x="1316.6953588470094" y="298.3888183826725">Model.Cashier</node>
+    <node x="1557.4261709080236" y="547.6628338797723">Model.Product</node>
+    <node x="1129.2522828793324" y="586.3208506916669">Main</node>
+    <node x="1358.7157829610708" y="467.66147496539884">Model.CashierTest</node>
+    <node x="840.9141645083814" y="255.63765065659663">Model.Customer</node>
+    <node x="1065.1037028754006" y="435.81587368932753">exceptions.OutOfStockException</node>
+    <node x="-59.75929978175765" y="553.6090526069099">Model.ManagerTest</node>
+    <node x="-121.3524428214252" y="680.1753942306673">Enum.Gender</node>
+    <node x="858.8048254989899" y="533.0131300677189">Enum.Qualification</node>
+    <node x="167.18830692878157" y="581.6873043281755">Interface.ManagerInterface</node>
+    <node x="394.8361010401935" y="669.8501875553409">Model.Store</node>
+    <node x="1316.9639542330617" y="118.10044604826487">Model.Applicant</node>
+    <node x="401.37122096963253" y="320.0944640241571">Model.Staff</node>
+    <node x="575.9837919137349" y="-13.105732035906271">Model.Person</node>
+    <node x="1685.1979168063378" y="434.0432216646927">Model.CustomerTest</node>
+    <node x="59.81533890937226" y="735.8516406265917">exceptions.InsufficientFundException</node>
+    <node x="1758.9701050792028" y="331.55174263697234">Interface.CashierInterface</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="Model.Manager" target="Model.Staff" relationship="GENERALIZATION">
+      <point x="194.00042967634874" y="4.715901293934621E-4" />
+      <point x="841.3050000000001" y="550.1990000000001" />
+      <point x="841.3050000000001" y="405.0" />
+      <point x="823.414" y="405.0" />
+      <point x="823.414" y="368.13800000000003" />
+      <point x="189.49977903036745" y="-11.956464024157071" />
+    </edge>
+    <edge source="Model.Applicant" target="Model.Person" relationship="GENERALIZATION">
+      <point x="-188.99995423306166" y="-4.460482648696029E-4" />
+      <point x="942.484" y="178.1" />
+      <point x="942.484" y="226.0" />
+      <point x="750.4839999999999" y="226.0" />
+      <point x="2.0808626510415706E-4" y="103.99973203590628" />
+    </edge>
+    <edge source="Model.Store" target="Model.Product" relationship="TO_MANY">
+      <point x="150.4998989598065" y="51.14981244465912" />
+      <point x="1280.5" y="781.0" />
+      <point x="1280.5" y="748.0" />
+      <point x="1703.426" y="748.0" />
+      <point x="14.99982909197638" y="82.00016612022773" />
+    </edge>
+    <edge source="Model.Staff" target="Model.Person" relationship="GENERALIZATION">
+      <point x="-2.2096963255080482E-4" y="-60.00046402415708" />
+      <point x="590.871" y="226.0" />
+      <point x="750.4839999999999" y="226.0" />
+      <point x="2.0808626510415706E-4" y="103.99973203590628" />
+    </edge>
+    <edge source="Model.Cashier" target="Interface.CashierInterface" relationship="REALIZATION">
+      <point x="191.0" y="9.662924254299838" />
+      <point x="-86.5" y="0.0" />
+    </edge>
+    <edge source="Model.Customer" target="Model.Product" relationship="TO_MANY">
+      <point x="-15.000164508381431" y="60.00034934340334" />
+      <point x="1024.414" y="748.0" />
+      <point x="1703.426" y="748.0" />
+      <point x="14.99982909197638" y="82.00016612022773" />
+    </edge>
+    <edge source="Model.Store" target="Model.Product" relationship="CREATE">
+      <point x="150.4998989598065" y="-1.8755534085812542E-4" />
+      <point x="851.305" y="729.85" />
+      <point x="851.305" y="766.0" />
+      <point x="1688.426" y="766.0" />
+      <point x="-1.7090802361963142E-4" y="82.00016612022773" />
+    </edge>
+    <edge source="Model.Customer" target="exceptions.OutOfStockException" relationship="CREATE">
+      <point x="142.18953836701917" y="60.0" />
+      <point x="0.0" y="-26.5" />
+    </edge>
+    <edge source="Model.Manager" target="Interface.ManagerInterface" relationship="REALIZATION">
+      <point x="-194.0" y="-14.089475802960692" />
+      <point x="258.68830692878157" y="536.1090526069099" />
+      <point x="0.0" y="-14.0" />
+    </edge>
+    <edge source="Model.Customer" target="exceptions.InsufficientFundException" relationship="CREATE">
+      <point x="-198.5" y="-13.043186632439529" />
+      <point x="149.68830692878157" y="302.5944640241571" />
+      <point x="-40.12703198059069" y="-26.5" />
+    </edge>
+    <edge source="Model.CustomerTest" target="Model.Customer" relationship="CREATE">
+      <point x="77.0" y="0.0" />
+      <point x="1949.4701050792028" y="460.5432216646927" />
+      <point x="1949.4701050792028" y="280.8888183826725" />
+      <point x="198.5" y="-34.74883227392411" />
+    </edge>
+    <edge source="Model.Customer" target="Model.Product" relationship="CREATE">
+      <point x="-1.6450838143100555E-4" y="60.00034934340334" />
+      <point x="1039.414" y="766.0" />
+      <point x="1688.426" y="766.0" />
+      <point x="-1.7090802361963142E-4" y="82.00016612022773" />
+    </edge>
+    <edge source="Model.Applicant" target="Enum.Qualification" relationship="TO_ONE">
+      <point x="189.0" y="0.0" />
+      <point x="1964.4701050792028" y="178.10044604826487" />
+      <point x="1964.4701050792028" y="807.3501875553409" />
+      <point x="931.8048254989899" y="807.3501875553409" />
+      <point x="0.0" y="71.0" />
+    </edge>
+    <edge source="Model.Customer" target="Model.Person" relationship="GENERALIZATION">
+      <point x="-1.645083813173187E-4" y="-59.9996506565966" />
+      <point x="1039.414" y="226.0" />
+      <point x="750.4839999999999" y="226.0" />
+      <point x="2.0808626510415706E-4" y="103.99973203590628" />
+    </edge>
+    <edge source="Model.Cashier" target="Model.Staff" relationship="GENERALIZATION">
+      <point x="-3.5884700946553494E-4" y="37.500181617327485" />
+      <point x="1507.695" y="405.0" />
+      <point x="823.414" y="405.0" />
+      <point x="823.414" y="368.13800000000003" />
+      <point x="189.49977903036745" y="-11.956464024157071" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic" zoom="0.5419479267116682" showDependencies="true" x="914.9999999999999" y="397.9999999999999" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Constructors</Category>
+    <Category>Fields</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
